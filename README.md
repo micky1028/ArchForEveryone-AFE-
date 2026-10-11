@@ -3,7 +3,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![OS: Arch Linux](https://img.shields.io/badge/OS-Arch%20Linux-blueviolet.svg?logo=arch-linux&logoColor=white)](https://archlinux.org)
 [![Author: micky1028](https://img.shields.io/badge/Author-micky1028-orange.svg?logo=github)](https://github.com/micky1028)
-[![Co-Worker: Luca16009](https://github.com/Luca161009)]
+[![Co-Worker: Luca16009](https://img.shields.io/badge/Author-Luca16009-purple.svg?logo=github)](https://github.com/Luca161009)
 
 The mission of **Etherean** is to break down the barriers of entry to the Linux world, eliminating terminal intimidation and hours spent on tedious post-installation setups. This repository contains the official interactive configuration tools designed to transform a clean Arch Linux installation into a fully featured, secure, and sleek system with just a single command.
 
