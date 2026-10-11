@@ -44,3 +44,12 @@ DebianForEveryone-DFE-/
     ├── packages.py       # Pacman & AUR installation engines
     ├── dotfile.py        # Dotfile symlinking helper
     └── services.py       # Systemd service manager
+```
+USE THIS SCRIPT!:
+```
+git clone [https://github.com/micky1028/DebianForEveryone-DFE-.git](https://github.com/micky1028/DebianForEveryone-DFE-.git)
+cd DebianForEveryone-DFE
+chmod +x Etherean_arch.sh
+./Etherean_arch.sh
+```
+
