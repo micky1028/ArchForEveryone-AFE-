@@ -46,7 +46,7 @@ ArchForEveryone-AFE-/
 ```
 USE THIS SCRIPT!:
 ```
-git clone [https://github.com/micky1028/ArchForEveryone-AFE-.git](https://github.com/micky1028/ArchForEveryone-DFE-.git)
+git clone [https://github.com/micky1028/ArchForEveryone-AFE-.git](https://github.com/micky1028/ArchForEveryone-AFE-.git)
 cd ArchForEveryone-AFE
 chmod +x USETHISBEFORE.sh
 ./USETHISBEFORE.sh
