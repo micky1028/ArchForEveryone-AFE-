@@ -34,9 +34,8 @@ The project is **100% Open Source (GPL v3 License)** to guarantee complete trans
 ## 📂 Project Architecture
 
 ```text
-DebianForEveryone-DFE-/
+ArchForEveryone-AFE-/
 ├── USETHISFIRST.sh       # Environment bootstrap script
-├── Etherean_arch.sh      # Shell wrapper script
 ├── main.py               # Main Python configuration wizard
 ├── settings.json         # Modular software & package mappings
 └── modules/
@@ -47,9 +46,15 @@ DebianForEveryone-DFE-/
 ```
 USE THIS SCRIPT!:
 ```
-git clone [https://github.com/micky1028/DebianForEveryone-DFE-.git](https://github.com/micky1028/DebianForEveryone-DFE-.git)
-cd DebianForEveryone-DFE
-chmod +x Etherean_arch.sh
-./Etherean_arch.sh
+git clone [https://github.com/micky1028/ArchForEveryone-AFE-.git](https://github.com/micky1028/ArchForEveryone-DFE-.git)
+cd ArchForEveryone-AFE
+chmod +x USETHISBEFORE.sh
+./USETHISBEFORE.sh
 ```
+
+and after use:
+```
+python3 main.py
+```
+
 
