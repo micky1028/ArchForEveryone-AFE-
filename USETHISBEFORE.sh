@@ -7,7 +7,8 @@ YELLOW="\033[1;33m"
 NC="\033[0m" # No Color
 
 echo -e "${GREEN}========================================${NC}"
-echo -e "${GREEN}      Linux For Everyone - Bootstrap    ${NC}"
+echo -e "${GREEN}      Etherean Arch - Bootstrap         ${NC}"
+echo -e "${GREEN}      Author: micky1028 (GitHub)        ${NC}"
 echo -e "${GREEN}========================================${NC}"
 
 # 1. Controllo se siamo su Arch Linux
@@ -21,7 +22,7 @@ if [ "$EUID" -ne 0 ]; then
     if ! command -v sudo &> /dev/null; then
         echo -e "${RED}[!] Error: This script requires root privileges or 'sudo' installed.${NC}"
         exit 1
-    }
+    fi
     SUDO="sudo"
 else
     SUDO=""
@@ -37,8 +38,8 @@ if [ -f "requirements.txt" ]; then
     if python3 -m pip install --break-system-packages -r requirements.txt; then
         echo -e "${GREEN}[*] Python libraries installed successfully via pip.${NC}"
     else
-        echo -e "${YELLOW}[!] Warning: pip installation had issues, trying user-space or virtualenv...${NC}"
-        python3 -m pip install --user -r requirements.txt
+        echo -e "${YELLOW}[!] Warning: pip installation had issues, trying user-space...${NC}"
+        python3 -m pip install --user --break-system-packages -r requirements.txt
     fi
 else
     echo -e "${YELLOW}[*] No requirements.txt found, skipping pip dependencies.${NC}"
