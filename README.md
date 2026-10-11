@@ -1,54 +1,46 @@
-🚀 Etherean - Configuration Wizards (Arch Edition)
+# 🚀 Etherean - Configuration Wizards (Arch Edition)
 
-The mission of Etherean is to break down the barriers of entry to the Linux world, eliminating terminal intimidation and hours spent on tedious post-installation setups. This repository contains the official interactive configuration scripts designed to transform a clean Arch Linux installation into a fully featured, secure, and sleek system with just a single command.
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![OS: Arch Linux](https://img.shields.io/badge/OS-Arch%20Linux-blueviolet.svg?logo=arch-linux&logoColor=white)](https://archlinux.org)
+[![Author: micky1028](https://img.shields.io/badge/Author-micky1028-orange.svg?logo=github)](https://github.com/micky1028)
+
+The mission of **Etherean** is to break down the barriers of entry to the Linux world, eliminating terminal intimidation and hours spent on tedious post-installation setups. This repository contains the official interactive configuration tools designed to transform a clean Arch Linux installation into a fully featured, secure, and sleek system with just a single command.
 
 This project is born from the intersection of Operating System development (OS Dev), automation, and Cybersecurity studies.
-🌟 Project Philosophy
 
-Many users abandon Arch Linux because they are intimidated by the command line or overwhelmed by the complexity of configuring multilib repositories, installing AUR helpers, setting up graphic drivers, or enabling 32-bit architectures for gaming.
+---
 
-Etherean solves this problem by automating the entire post-installation workflow through interactive scripts and modular configuration files that streamline everything smoothly.
+## 🌟 Project Philosophy
 
-The project is 100% Open Source (GPL v3 License) to guarantee complete transparency, security, and code auditability by the community.
-🛠️ What is Automated on Arch Linux?
+Many users avoid or abandon Arch Linux because they are intimidated by manual configuration, setting up multilib repositories, installing AUR helpers, configuring GPU drivers, or managing dependencies for gaming and productivity.
 
-    Intelligent Repositories Setup: Automatically enables and configures the [multilib] repository in background silently for 32-bit application and gaming support.
+**Etherean** solves this problem by automating the entire post-installation workflow through interactive prompts and a modular setup wizard.
 
-    AUR Helper Bootstrapping: Automatically installs base development tools (base-devel, git) and bootstraps AUR support (yay / paru).
+The project is **100% Open Source (GPL v3 License)** to guarantee complete transparency, security, and full code auditability by the community.
 
-    Hardware & Drivers: Simplifies the detection and installation of GPU drivers (Nvidia, AMD, Intel) and system hardware utilities.
+---
 
-    Gaming Ready: Full support for steam, lutris, heroic-games-launcher-bin, and gaming dependencies.
+## 🛠️ What is Automated on Arch Linux?
 
-    Productivity, Web & Shells: Lets you select your desktop environments, web browsers, shells, fonts, system utilities, and developer tools interactively.
+* **Intelligent Repository Setup**: Silently configures and enables the `[multilib]` repository in `/etc/pacman.conf` for 32-bit applications and gaming compatibility.
+* **AUR Helper Bootstrapping**: Automatically installs `base-devel`, `git`, and manages AUR helpers like `yay` or `paru`.
+* **Hardware & Drivers**: Seamlessly handles selection and installation for NVIDIA, AMD, or Intel graphics drivers.
+* **Gaming Ready**: One-click selection for `steam`, `lutris`, `heroic-games-launcher-bin`, and gaming runtimes.
+* **Interactive Package Selection**: Choice-driven menus with an **"Install All" (A)** option across browsers, shells, programming tools, multimedia apps, utilities, and fonts.
+* **System Maintenance & Reboots**: Handles initial database synchronization (`pacman -Sy`), checks for GitHub repo updates (`git pull`), performs a final full upgrade (`pacman -Syu`), and offers an automatic reboot prompt upon completion.
 
-    Terminal Aesthetics & Dotfiles: Symlinking and automatic environment setups for terminal customizations.
+---
 
-📂 Repository Structure
+## 📂 Project Architecture
 
-The project expands across the major families of the Linux ecosystem:
-
-    🔹 Etherean_config.sh: Optimized script for Debian-based systems (Debian, Ubuntu, Linux Mint).
-
-    🔸 Etherean_arch.sh / main.py: Variant for Arch-based systems (Arch Linux, EndeavourOS, CachyOS, Manjaro) with native AUR helper integration.
-
-    🔻 Etherean_fedora.sh (Coming Soon): Variant for Fedora/RHEL-based systems utilizing DNF and RPM Fusion.
-
-🚀 How to Run the Script (Arch Linux)
-
-Open the terminal on your fresh Arch Linux installation and run these commands:
-Bash
-
-git clone https://github.com/micky1028/DebianForEveryone-DFE-.git
-cd DebianForEveryone-DFE-
-
-chmod +x USETHISFIRST.sh
-./USETHISFIRST.sh
-
-python3 main.py
-
-👤 Author & Credits
-
-    Author: micky1028 (GitHub)
-
-    License: GPL v3 License
+```text
+DebianForEveryone-DFE-/
+├── USETHISFIRST.sh       # Environment bootstrap script
+├── Etherean_arch.sh      # Shell wrapper script
+├── main.py               # Main Python configuration wizard
+├── settings.json         # Modular software & package mappings
+└── modules/
+    ├── core.py           # Execution commands & silent multilib handling
+    ├── packages.py       # Pacman & AUR installation engines
+    ├── dotfile.py        # Dotfile symlinking helper
+    └── services.py       # Systemd service manager
